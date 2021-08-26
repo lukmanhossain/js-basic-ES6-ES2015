@@ -15,7 +15,6 @@ for (let i = 0; i < numbers.length; i++) {
     const number = numbers[i];
     console.log(number);
     sum = sum + number;
-
 }
 
 const student = { name: 'Lukman', roll: 022, job: 'intern' };
