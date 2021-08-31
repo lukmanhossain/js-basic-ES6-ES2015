@@ -1,22 +1,7 @@
-document.getElementById('add-border').addEventListener('click', function () {
-    const container = document.getElementById('friend-container');
-    container.style.border = '3px solid yellow';
-});
+// const stuInfo = JSON.stringify({ name: "James", roll: 3 });
+// console.log(stuInfo.name);
 
-function addBackgroundColor() {
-    const friends = document.getElementsByClassName('friend');
-    for (const friend of friends) {
-        friend.style.backgroundColor = 'lightblue';
-    }
-};
+const premikas = { name: 'keka ferdousi', cars: { brand: 'toyota' } }
+const { cars } = premikas.brand;
 
-document.getElementById('add-friend').addEventListener('click', function () {
-    const container = document.getElementById('friend-container');
-    const friendDiv = document.createElement('Div');
-    friendDiv.classList.add('friend');
-    friendDiv.innerHTML = `
-            <h3 class="friend-name">New-friend</h3>
-            <p>Commodi nostrum quia debitis dignissimos.</p>
-    `;
-    container.appendChild(friendDiv);
-});
+console.log(premikas);
